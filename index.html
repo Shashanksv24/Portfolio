@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Shashank Vasanthakumar | Project Management &amp; Product Operations Professional</title>
+<meta name="description" content="Project Management and Operations Professional with 5+ years of enterprise experience in Agile delivery, PMO support, governance, compliance, KPI reporting, and process optimization across Amazon and Outlier AI."/>
+<meta name="keywords" content="Enterprise Project Coordination, Agile Delivery, Waterfall Delivery, Stakeholder Management, PMO Support, Jira, Confluence, Risk Management, Vendor Coordination, KPI Reporting, Governance Controls, Product Operations, Business Analysis, Change Management, Project Coordinator Toronto, PMO Analyst, IT Project Coordinator, Operations Analyst, Business Analyst, Compliance Analyst, Governance Analyst, Product Analyst, Process Improvement"/>
+<meta name="author" content="Shashank Vasanthakumar"/>
+<meta property="og:title" content="Shashank Vasanthakumar | Project Management &amp; Product Operations"/>
+<meta property="og:description" content="5+ years of enterprise operations experience at Amazon and Outlier AI. Project Coordination, PMO, Governance, Compliance, Agile Delivery."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --ink:#0d0e11;
+  --ink2:#141620;
+  --ink3:#1c1f2e;
+  --muted:#6b7280;
+  --rule:#232635;
+  --cream:#eef0f5;
+  --cream2:#d8dce8;
+  --blue:#2563eb;
+  --blue2:#3b82f6;
+  --blue-glow:rgba(37,99,235,.12);
+  --serif:'Playfair Display',Georgia,serif;
+  --sans:'Inter',system-ui,sans-serif;
+}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--ink);color:var(--cream);font-weight:300;line-height:1.7;overflow-x:hidden}
+.container{max-width:1060px;margin:0 auto;padding:0 2.5rem}
+section{padding:5.5rem 0}
+a{text-decoration:none}
+
+/* ── NAV ── */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:300;
+  padding:.9rem 2.5rem;
+  display:flex;align-items:center;justify-content:space-between;
+  background:rgba(13,14,17,.96);
+  backdrop-filter:blur(20px);
+  border-bottom:1px solid var(--rule);
+}
+.nav-brand{display:flex;flex-direction:column}
+.nav-logo{font-family:var(--serif);font-size:1.15rem;color:var(--cream);letter-spacing:-.01em;line-height:1}
+.nav-logo span{color:var(--blue)}
+.nav-tagline{font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-top:.15rem}
+.nav-links{display:flex;gap:1.6rem;list-style:none}
+.nav-links a{font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);transition:color .2s}
+.nav-links a:hover,.nav-links a.active{color:var(--cream)}
+.nav-actions{display:flex;gap:.6rem;align-items:center}
+.btn-nav-dl{
+  display:inline-flex;align-items:center;gap:.4rem;
+  padding:.42rem 1rem;background:var(--blue);color:#fff;
+  font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;
+  font-weight:600;transition:background .2s;
+}
+.btn-nav-dl:hover{background:#1d4ed8}
+.btn-nav-li{
+  display:inline-flex;align-items:center;gap:.4rem;
+  padding:.42rem 1rem;border:1px solid var(--rule);color:var(--muted);
+  font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;
+  transition:all .2s;
+}
+.btn-nav-li:hover{border-color:var(--blue);color:var(--blue)}
+
+/* ── HERO ── */
+#hero{min-height:100vh;display:flex;align-items:stretch;background:var(--ink)}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;width:100%;min-height:100vh}
+.hero-left{
+  display:flex;flex-direction:column;justify-content:center;
+  padding:8rem 3.5rem 4rem 4rem;
+  position:relative;
+}
+/* subtle grid bg */
+.hero-left::before{
+  content:'';position:absolute;inset:0;
+  background-image:linear-gradient(rgba(37,99,235,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(37,99,235,.04) 1px,transparent 1px);
+  background-size:48px 48px;pointer-events:none;
+}
+.hero-badge{
+  display:inline-flex;align-items:center;gap:.7rem;
+  font-size:.67rem;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--blue);margin-bottom:1.6rem;
+  opacity:0;animation:fadeUp .7s .1s forwards;
+}
+.hero-badge::before{content:'';width:24px;height:1px;background:var(--blue)}
+.hero-h1{
+  font-family:var(--serif);
+  font-size:clamp(2rem,3.4vw,3.1rem);
+  line-height:1.12;letter-spacing:-.02em;color:var(--cream);
+  margin-bottom:.75rem;
+  opacity:0;animation:fadeUp .8s .22s forwards;
+}
+.hero-h1 em{color:var(--blue);font-style:italic}
+.hero-sub{
+  font-size:.95rem;line-height:1.7;color:#9ca3af;
+  max-width:420px;margin-bottom:2rem;
+  opacity:0;animation:fadeUp .8s .34s forwards;
+}
+.hero-btns{
+  display:flex;gap:.75rem;flex-wrap:wrap;
+  margin-bottom:2rem;
+  opacity:0;animation:fadeUp .8s .46s forwards;
+}
+.btn-primary{
+  display:inline-flex;align-items:center;gap:.5rem;
+  padding:.72rem 1.6rem;background:var(--blue);color:#fff;
+  font-size:.74rem;letter-spacing:.09em;text-transform:uppercase;
+  font-weight:600;transition:background .2s;
+}
+.btn-primary:hover{background:#1d4ed8}
+.btn-ghost{
+  display:inline-flex;align-items:center;gap:.5rem;
+  padding:.72rem 1.6rem;border:1px solid var(--rule);color:var(--muted);
+  font-size:.74rem;letter-spacing:.09em;text-transform:uppercase;
+  transition:all .2s;
+}
+.btn-ghost:hover{border-color:var(--blue);color:var(--blue)}
+.hero-contact-strip{
+  display:flex;gap:1.5rem;flex-wrap:wrap;align-items:center;
+  font-size:.74rem;color:var(--muted);
+  border-top:1px solid var(--rule);padding-top:1.5rem;
+  opacity:0;animation:fadeUp .8s .58s forwards;
+}
+.hero-contact-strip a{color:var(--muted);transition:color .2s}
+.hero-contact-strip a:hover{color:var(--blue)}
+.hero-contact-strip .pipe{color:var(--rule)}
+
+/* hero right */
+.hero-right{
+  background:var(--ink2);border-left:1px solid var(--rule);
+  display:flex;flex-direction:column;justify-content:center;
+  padding:8rem 3rem 4rem;position:relative;overflow:hidden;
+}
+.hero-right::after{
+  content:'';position:absolute;bottom:-80px;right:-80px;
+  width:260px;height:260px;border-radius:50%;
+  background:radial-gradient(circle,rgba(37,99,235,.08) 0%,transparent 70%);
+  pointer-events:none;
+}
+.stat-grid{
+  display:grid;grid-template-columns:1fr 1fr;gap:1px;
+  background:var(--rule);border:1px solid var(--rule);
+  margin-bottom:1.75rem;
+  opacity:0;animation:fadeUp .8s .55s forwards;
+}
+.stat-cell{background:var(--ink2);padding:1.4rem 1.25rem}
+.stat-num{font-family:var(--serif);font-size:2.4rem;line-height:1;color:var(--blue);margin-bottom:.2rem}
+.stat-label{font-size:.63rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+/* replaced fake quote with metrics block */
+.hero-metrics-block{
+  display:flex;flex-direction:column;gap:0;
+  border:1px solid var(--rule);
+  opacity:0;animation:fadeUp .8s .7s forwards;
+}
+.hero-metric-row{
+  display:flex;align-items:center;gap:1rem;
+  padding:.85rem 1.1rem;border-bottom:1px solid var(--rule);
+}
+.hero-metric-row:last-child{border-bottom:none}
+.hero-metric-dot{width:6px;height:6px;border-radius:50%;background:var(--blue);flex-shrink:0}
+.hero-metric-text{font-size:.8rem;color:#9ca3af;line-height:1.5}
+.hero-metric-text strong{color:var(--cream);font-weight:500}
+
+/* ── SECTION LABELS ── */
+.section-label{
+  font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--blue);
+  margin-bottom:.6rem;display:flex;align-items:center;gap:.75rem;
+}
+.section-label::after{content:'';flex:1;height:1px;background:var(--rule)}
+.section-h2{font-family:var(--serif);font-size:2.3rem;color:var(--cream);margin-top:.5rem;margin-bottom:3rem;line-height:1.15}
+
+/* ── ABOUT ── */
+#about{background:var(--ink);border-top:1px solid var(--rule)}
+.about-grid{display:grid;grid-template-columns:240px 1fr;gap:4.5rem;align-items:start}
+.about-photo{
+  width:100%;aspect-ratio:3/4;overflow:hidden;
+  border:1px solid var(--rule);margin-bottom:1.4rem;
+}
+.about-photo img{width:100%;height:100%;object-fit:cover;object-position:top center;display:block}
+.about-name{font-family:var(--serif);font-size:1.6rem;line-height:1.2;color:var(--cream);margin-bottom:1.25rem}
+.sidebar-label{font-size:.63rem;letter-spacing:.18em;text-transform:uppercase;color:var(--blue);margin-bottom:.5rem}
+.contact-list{list-style:none;display:flex;flex-direction:column;gap:.55rem}
+.contact-list li{display:flex;align-items:center;gap:.55rem;font-size:.78rem;color:var(--muted)}
+.contact-list li::before{content:'';width:3px;height:3px;border-radius:50%;background:var(--blue);flex-shrink:0}
+.contact-list a{color:var(--muted)}
+.contact-list a:hover{color:var(--blue)}
+.about-h2{font-family:var(--serif);font-size:1.9rem;color:var(--cream);line-height:1.2;margin-bottom:1.4rem}
+.about-bio p{font-size:.9rem;color:#9ca3af;line-height:1.85;margin-bottom:1rem}
+.about-bio p:last-child{margin-bottom:0}
+/* ATS keyword strip */
+.ats-strip{
+  margin-top:2rem;padding:1rem 1.25rem;
+  background:var(--ink2);border:1px solid var(--rule);
+  font-size:.72rem;color:#4b5563;line-height:2;letter-spacing:.03em;
+}
+.ats-strip span{color:#374151}
+
+/* ── CAPABILITIES ── */
+#capabilities{background:var(--ink2);border-top:1px solid var(--rule)}
+.cap-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--rule)}
+.cap-card{
+  background:var(--ink2);padding:2rem 1.75rem;
+  border-top:2px solid transparent;
+  transition:border-top-color .2s,background .2s;
+}
+.cap-card:hover{border-top-color:var(--blue);background:var(--blue-glow)}
+.cap-icon{margin-bottom:1.1rem}
+.cap-title{font-size:.9rem;font-weight:600;color:var(--cream);margin-bottom:.6rem;letter-spacing:.02em}
+.cap-items{list-style:none;display:flex;flex-direction:column;gap:.35rem}
+.cap-items li{font-size:.77rem;color:var(--muted);display:flex;align-items:center;gap:.5rem}
+.cap-items li::before{content:'›';color:var(--blue);font-size:.9rem}
+
+/* ── EXPERIENCE ── */
+#experience{background:var(--ink);border-top:1px solid var(--rule)}
+.tl-wrap{display:flex;flex-direction:column}
+.tl-item{
+  display:grid;grid-template-columns:195px 1fr;gap:3rem;
+  padding:2.5rem 0;border-top:1px solid var(--rule);
+}
+.tl-item:first-child{border-top:none;padding-top:0}
+.tl-date{font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:.35rem}
+.tl-company{font-family:var(--serif);font-size:1rem;color:var(--cream);margin-bottom:.2rem}
+.tl-loc{font-size:.7rem;color:var(--muted)}
+.tl-badge{
+  display:inline-block;padding:.15rem .65rem;margin-bottom:.9rem;
+  border:1px solid rgba(37,99,235,.35);
+  font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;color:var(--blue);
+}
+.tl-role{font-family:var(--serif);font-size:1.35rem;color:var(--cream);margin-bottom:1.1rem;line-height:1.25}
+.tl-bullets{list-style:none;display:flex;flex-direction:column;gap:.55rem}
+.tl-bullets li{display:flex;gap:.65rem;align-items:baseline;font-size:.85rem;color:#9ca3af;line-height:1.75}
+.tl-bullets li::before{content:'–';color:var(--blue);flex-shrink:0}
+.tl-kpis{
+  display:flex;gap:2rem;flex-wrap:wrap;
+  margin-top:1.4rem;padding:.9rem 1.1rem;
+  border-left:2px solid var(--blue);background:var(--blue-glow);
+}
+.tl-kpi-num{font-family:var(--serif);font-size:1.7rem;color:var(--blue);line-height:1}
+.tl-kpi-label{font-size:.62rem;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);margin-top:.15rem}
+
+/* ── PROJECTS ── */
+#projects{background:var(--ink2);border-top:1px solid var(--rule)}
+.proj-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--rule)}
+.proj-card{
+  background:var(--ink2);padding:2.25rem;position:relative;overflow:hidden;
+  transition:background .2s;
+}
+.proj-card:hover{background:var(--blue-glow)}
+.proj-num{
+  font-family:var(--serif);font-size:3.2rem;
+  color:rgba(37,99,235,.08);
+  position:absolute;top:1.25rem;right:1.5rem;line-height:1;user-select:none;
+}
+.proj-tag{font-size:.62rem;letter-spacing:.13em;text-transform:uppercase;color:var(--blue);margin-bottom:.65rem}
+.proj-card-title{font-family:var(--serif);font-size:1.2rem;color:var(--cream);margin-bottom:.3rem;line-height:1.25}
+.proj-client{font-size:.72rem;color:var(--muted);margin-bottom:1.1rem}
+.proj-desc{font-size:.83rem;color:#9ca3af;line-height:1.8;margin-bottom:1.5rem}
+.proj-metrics{display:flex;gap:1.5rem;flex-wrap:wrap}
+.proj-metric-num{font-family:var(--serif);font-size:1.4rem;color:var(--blue);line-height:1}
+.proj-metric-label{font-size:.62rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-top:.15rem}
+
+/* ── AWARDS ── */
+#awards{background:var(--ink);border-top:1px solid var(--rule)}
+.awards-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.1rem}
+.award-card{
+  padding:1.75rem;border:1px solid var(--rule);
+  transition:border-color .22s;
+}
+.award-card:hover{border-color:var(--blue)}
+.award-year{font-size:.63rem;letter-spacing:.13em;text-transform:uppercase;color:var(--blue);margin-bottom:.65rem}
+.award-name{font-family:var(--serif);font-size:1.1rem;color:var(--cream);margin-bottom:.6rem}
+.award-desc{font-size:.8rem;color:#9ca3af;line-height:1.7}
+
+/* ── EDUCATION ── */
+#education{background:var(--ink2);border-top:1px solid var(--rule)}
+.edu-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem;margin-bottom:2rem}
+.edu-card{
+  padding:1.75rem;border:1px solid var(--rule);
+  transition:border-color .22s;
+}
+.edu-card:hover{border-color:var(--blue)}
+.edu-period{font-size:.65rem;text-transform:uppercase;letter-spacing:.08em;color:var(--blue);margin-bottom:.35rem}
+.edu-degree{font-family:var(--serif);font-size:1.1rem;color:var(--cream);margin-bottom:.25rem;line-height:1.3}
+.edu-school{font-size:.77rem;color:var(--muted);margin-bottom:.7rem}
+.edu-notes{font-size:.79rem;color:#9ca3af;line-height:1.7}
+.cert-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem;margin-top:1.5rem}
+.cert-card{
+  display:flex;gap:1rem;align-items:center;
+  padding:.85rem 1.1rem;border:1px solid var(--rule);
+  transition:border-color .2s;
+}
+.cert-card:hover{border-color:var(--blue)}
+.cert-badge{
+  width:32px;height:32px;border:1px solid var(--blue);flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;
+  font-size:.55rem;color:var(--blue);text-transform:uppercase;letter-spacing:.04em;font-weight:700;
+}
+.cert-name{font-size:.84rem;color:var(--cream);margin-bottom:.15rem}
+.cert-org{font-size:.7rem;color:var(--muted)}
+.skills-block{margin-top:2.5rem}
+.skills-h3{font-size:.65rem;text-transform:uppercase;letter-spacing:.14em;color:var(--muted);margin-bottom:1rem}
+.skill-row{display:flex;gap:.75rem;align-items:flex-start;margin-bottom:.75rem}
+.skill-row-label{font-size:.67rem;color:var(--blue);text-transform:uppercase;letter-spacing:.06em;min-width:150px;padding-top:.28rem;flex-shrink:0}
+.skill-tags{display:flex;flex-wrap:wrap;gap:.3rem}
+.skill-tag{padding:.22rem .7rem;border:1px solid var(--rule);font-size:.68rem;color:var(--muted)}
+
+/* ── CONTACT ── */
+#contact{background:var(--ink);border-top:1px solid var(--rule)}
+.contact-wrap{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start}
+.contact-h2{font-family:var(--serif);font-size:2.5rem;line-height:1.1;color:var(--cream);margin:1rem 0 1.25rem}
+.contact-desc{font-size:.9rem;color:#9ca3af;line-height:1.85;margin-bottom:2rem}
+.contact-cta-btns{display:flex;flex-direction:column;gap:.75rem;margin-bottom:2.5rem}
+.contact-info{display:flex;flex-direction:column;gap:1rem}
+.ci-label{font-size:.63rem;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);margin-bottom:.15rem}
+.ci-val{font-size:.88rem;color:var(--cream)}
+.ci-val a{color:var(--cream);transition:color .2s}
+.ci-val a:hover{color:var(--blue)}
+.contact-form-box{padding:2rem;border:1px solid var(--rule)}
+.cf-title{font-family:var(--serif);font-size:1.3rem;color:var(--cream);margin-bottom:1.5rem}
+.cf-form{display:flex;flex-direction:column;gap:1rem}
+.cf-field{display:flex;flex-direction:column;gap:.35rem}
+.cf-field label{font-size:.63rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted)}
+.cf-field input,.cf-field textarea{
+  background:var(--ink2);border:1px solid var(--rule);
+  padding:.7rem .9rem;font-size:.86rem;color:var(--cream);
+  font-family:var(--sans);font-weight:300;
+  transition:border-color .2s;outline:none;
+}
+.cf-field input:focus,.cf-field textarea:focus{border-color:var(--blue)}
+.cf-field input::placeholder,.cf-field textarea::placeholder{color:#4b5563}
+.cf-field textarea{min-height:100px;resize:vertical}
+.cf-submit{
+  padding:.7rem 1.6rem;background:var(--blue);color:#fff;
+  border:none;font-family:var(--sans);font-size:.72rem;
+  font-weight:600;letter-spacing:.1em;text-transform:uppercase;
+  cursor:pointer;transition:background .2s;align-self:flex-start;
+}
+.cf-submit:hover{background:#1d4ed8}
+.open-for{margin-top:2rem;padding:1.5rem;border:1px solid var(--rule);background:var(--ink2)}
+.of-title{font-size:.65rem;text-transform:uppercase;letter-spacing:.14em;color:var(--blue);margin-bottom:1rem}
+.of-roles{display:flex;flex-direction:column;gap:.4rem}
+.of-role{font-size:.82rem;color:#9ca3af;display:flex;align-items:center;gap:.55rem}
+.of-role::before{content:'';width:4px;height:4px;border-radius:50%;background:var(--blue);flex-shrink:0}
+.of-role.strong{color:var(--cream);font-weight:500}
+
+/* ── FOOTER ── */
+footer{
+  background:var(--ink2);border-top:1px solid var(--rule);
+  padding:1.75rem 2.5rem;
+  display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;
+}
+.footer-left{display:flex;flex-direction:column;gap:.2rem}
+.footer-logo{font-family:var(--serif);font-size:1rem;color:var(--cream)}
+.footer-logo span{color:var(--blue)}
+.footer-copy{font-size:.68rem;color:var(--muted)}
+.footer-links{display:flex;gap:1.25rem;list-style:none}
+.footer-links a{font-size:.68rem;color:var(--muted)}
+.footer-links a:hover{color:var(--blue)}
+
+/* ── STICKY FLOAT BTNS ── */
+.sticky-btns{
+  position:fixed;right:1.25rem;bottom:1.5rem;z-index:400;
+  display:flex;flex-direction:column;gap:.5rem;
+}
+.sticky-btn{
+  display:flex;align-items:center;justify-content:center;gap:.4rem;
+  padding:.55rem 1rem;
+  font-size:.66rem;letter-spacing:.09em;text-transform:uppercase;font-weight:600;
+  transition:all .2s;white-space:nowrap;
+  box-shadow:0 2px 16px rgba(0,0,0,.4);
+}
+.sticky-btn-li{background:var(--ink2);border:1px solid var(--rule);color:var(--muted)}
+.sticky-btn-li:hover{border-color:var(--blue);color:var(--blue)}
+.sticky-btn-dl{background:var(--blue);color:#fff}
+.sticky-btn-dl:hover{background:#1d4ed8}
+
+/* ── ANIMATIONS ── */
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+.reveal-d1{transition-delay:.1s}
+.reveal-d2{transition-delay:.2s}
+.reveal-d3{transition-delay:.3s}
+
+/* ── RESPONSIVE ── */
+@media(max-width:900px){
+  .hero-grid,.about-grid,.contact-wrap{grid-template-columns:1fr}
+  .hero-right{border-left:none;border-top:1px solid var(--rule)}
+  .tl-item{grid-template-columns:1fr}
+  .proj-grid,.awards-grid,.edu-grid,.cap-grid,.cert-grid{grid-template-columns:1fr}
+  .hero-left{padding:7rem 1.5rem 3rem}
+  .hero-right{padding:3rem 1.5rem}
+  nav{padding:.8rem 1.25rem}
+  .nav-links{display:none}
+  .nav-tagline{display:none}
+  section{padding:4rem 0}
+  .skill-row{flex-direction:column;gap:.3rem}
+  .skill-row-label{min-width:unset}
+  .sticky-btns{right:.75rem;bottom:1rem}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="topnav">
+  <div class="nav-brand">
+    <div class="nav-logo">SV<span>.</span></div>
+    <div class="nav-tagline">Project Management &amp; Operations</div>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#capabilities">Capabilities</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#awards">Awards</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-actions">
+    <a href="https://linkedin.com/in/shashanksv24" target="_blank" class="btn-nav-li">&#128279; LinkedIn</a>
+    <a href="resume.pdf" download class="btn-nav-dl">&#8659; Resume</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-grid">
+    <div class="hero-left">
+      <div class="hero-badge">Greater Toronto Area &nbsp;&middot;&nbsp; Open to Work</div>
+      <h1 class="hero-h1">
+        Project Management &amp;<br>
+        <em>Product Operations</em><br>
+        Professional
+      </h1>
+      <p class="hero-sub">
+        Driving process improvement, governance, and cross-functional delivery across enterprise operations. 5+ years at Amazon and Outlier AI. Post-Graduate Diploma in IT Project Management. PMP in progress.
+      </p>
+      <div class="hero-btns">
+        <a href="resume.pdf" download class="btn-primary">&#8659;&nbsp; Download Resume</a>
+        <a href="https://linkedin.com/in/shashanksv24" target="_blank" class="btn-ghost">&#128279;&nbsp; View LinkedIn</a>
+        <a href="#contact" class="btn-ghost">Contact</a>
+      </div>
+      <div class="hero-contact-strip">
+        <a href="mailto:Shashankvasanthakumar@gmail.com">Shashankvasanthakumar@gmail.com</a>
+        <span class="pipe">|</span>
+        <a href="tel:+14378089346">(437) 808-9346</a>
+        <span class="pipe">|</span>
+        <span>Greater Toronto Area, ON</span>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="stat-grid">
+        <div class="stat-cell">
+          <div class="stat-num">5+</div>
+          <div class="stat-label">Years Enterprise Exp.</div>
+        </div>
+        <div class="stat-cell">
+          <div class="stat-num">40%</div>
+          <div class="stat-label">Efficiency Gains Delivered</div>
+        </div>
+        <div class="stat-cell">
+          <div class="stat-num">98%+</div>
+          <div class="stat-label">SLA Adherence</div>
+        </div>
+        <div class="stat-cell">
+          <div class="stat-num">0</div>
+          <div class="stat-label">Audit Findings</div>
+        </div>
+      </div>
+      <div class="hero-metrics-block">
+        <div class="hero-metric-row">
+          <div class="hero-metric-dot"></div>
+          <div class="hero-metric-text">Delivered <strong>40% processing efficiency gains</strong> through centralized data platform design and workflow optimization at Amazon</div>
+        </div>
+        <div class="hero-metric-row">
+          <div class="hero-metric-dot"></div>
+          <div class="hero-metric-text"><strong>Zero audit findings</strong> across all regulatory compliance reviews at Outlier AI — 22% accuracy improvement</div>
+        </div>
+        <div class="hero-metric-row">
+          <div class="hero-metric-dot"></div>
+          <div class="hero-metric-text">Reduced workflow escalations by <strong>18%</strong> through structured investigation process redesign and SOP documentation</div>
+        </div>
+        <div class="hero-metric-row">
+          <div class="hero-metric-dot"></div>
+          <div class="hero-metric-text"><strong>98%+ SLA adherence</strong> maintained across enterprise operational workflows through proactive issue tracking</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="reveal">
+        <p class="sidebar-label">Profile</p>
+        <h2 class="about-name">Shashank<br>Vasanthakumar</h2>
+        <div class="about-photo">
+          <img src="data:image/png;base64,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" alt="Shashank Vasanthakumar — Project Management &amp; Operations Professional"/>
+        </div>
+        <ul class="contact-list">
+          <li>(437) 808-9346</li>
+          <li><a href="mailto:Shashankvasanthakumar@gmail.com">Shashankvasanthakumar@gmail.com</a></li>
+          <li><a href="https://linkedin.com/in/shashanksv24" target="_blank">linkedin.com/in/shashanksv24</a></li>
+          <li>Greater Toronto Area, ON</li>
+          <li>Remote &amp; Hybrid welcome</li>
+        </ul>
+      </div>
+      <div class="reveal reveal-d1">
+        <p class="section-label">Professional Background</p>
+        <h2 class="about-h2">Operations, Product &amp;<br>Governance Background</h2>
+        <div class="about-bio">
+          <p>IT Project Management Graduate and Operations Professional with 5+ years of experience in project governance, process optimization, and compliance operations within large enterprise environments, including Amazon Development Center and Outlier AI.</p>
+          <p>Began in Transaction Risk Management, developing structured documentation, audit controls, and operational discipline under high-volume pressure — maintaining 95%+ accuracy across four consecutive quarters. This foundation transitioned into product analysis and project coordination: BRD/FRD authorship, workflow redesign, KPI reporting, and cross-functional stakeholder alignment across engineering, legal, QA, and operations teams.</p>
+          <p>At Amazon, led initiatives producing 40% efficiency gains and 98%+ SLA adherence. At Outlier AI, built compliance governance infrastructure from the ground up — zero audit findings across all regulatory reviews. Holds a Post-Graduate Diploma in IT Project Management from Conestoga (GPA 3.6) and a BBA in Finance &amp; Marketing from PES University (Dean's List, CNR Rao Merit Scholar). PMP certification preparation in progress.</p>
+        </div>
+        <div class="ats-strip">
+          <span>Enterprise Project Coordination &nbsp;&middot;&nbsp; Agile Delivery &nbsp;&middot;&nbsp; Waterfall Delivery &nbsp;&middot;&nbsp; Stakeholder Management &nbsp;&middot;&nbsp; PMO Support &nbsp;&middot;&nbsp; Jira &nbsp;&middot;&nbsp; Confluence &nbsp;&middot;&nbsp; Risk Management &nbsp;&middot;&nbsp; Vendor Coordination &nbsp;&middot;&nbsp; KPI Reporting &nbsp;&middot;&nbsp; Governance Controls &nbsp;&middot;&nbsp; Product Operations &nbsp;&middot;&nbsp; Business Analysis &nbsp;&middot;&nbsp; Change Management &nbsp;&middot;&nbsp; Process Improvement &nbsp;&middot;&nbsp; SLA Management &nbsp;&middot;&nbsp; BRD &nbsp;&middot;&nbsp; FRD &nbsp;&middot;&nbsp; Audit Readiness &nbsp;&middot;&nbsp; Compliance Operations &nbsp;&middot;&nbsp; SharePoint &nbsp;&middot;&nbsp; MS Project &nbsp;&middot;&nbsp; SQL &nbsp;&middot;&nbsp; PowerBI</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CORE CAPABILITIES -->
+<section id="capabilities">
+  <div class="container">
+    <div class="reveal">
+      <p class="section-label">What I Deliver in Teams</p>
+      <h2 class="section-h2">Core Capabilities</h2>
+    </div>
+    <div class="cap-grid reveal">
+      <div class="cap-card">
+        <div class="cap-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="1.5"><rect x="3" y="4" width="18" height="16" rx="1"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="4" x2="9" y2="9"/></svg>
+        </div>
+        <div class="cap-title">Project Coordination &amp; PMO Support</div>
+        <ul class="cap-items">
+          <li>Agile ceremonies &amp; sprint management</li>
+          <li>Risk &amp; issue log maintenance</li>
+          <li>Schedule coordination &amp; milestone tracking</li>
+          <li>PM reporting &amp; status updates</li>
+          <li>WBS development &amp; resource tracking</li>
+        </ul>
+      </div>
+      <div class="cap-card">
+        <div class="cap-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+        </div>
+        <div class="cap-title">Product Operations &amp; Documentation</div>
+        <ul class="cap-items">
+          <li>BRD / FRD authorship</li>
+          <li>User story &amp; backlog coordination</li>
+          <li>KPI reporting &amp; stakeholder alignment</li>
+          <li>Requirements gathering &amp; analysis</li>
+          <li>Feature prioritization support</li>
+        </ul>
+      </div>
+      <div class="cap-card">
+        <div class="cap-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="1.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+        </div>
+        <div class="cap-title">Process Improvement &amp; Workflow Optimization</div>
+        <ul class="cap-items">
+          <li>Workflow mapping &amp; redesign</li>
+          <li>SLA management &amp; adherence</li>
+          <li>Governance controls implementation</li>
+          <li>Operational redesign &amp; SOP development</li>
+          <li>Bottleneck identification &amp; resolution</li>
+        </ul>
+      </div>
+      <div class="cap-card">
+        <div class="cap-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="1.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <div class="cap-title">Data &amp; Reporting</div>
+        <ul class="cap-items">
+          <li>Excel dashboards &amp; automation</li>
+          <li>Power BI reporting</li>
+          <li>SQL data validation</li>
+          <li>Executive reporting &amp; briefings</li>
+          <li>KPI framework design</li>
+        </ul>
+      </div>
+      <div class="cap-card">
+        <div class="cap-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <div class="cap-title">Governance &amp; Compliance</div>
+        <ul class="cap-items">
+          <li>Audit readiness &amp; documentation</li>
+          <li>Documentation standards &amp; version control</li>
+          <li>SOP development &amp; enforcement</li>
+          <li>Regulatory workflow alignment</li>
+          <li>Risk register design &amp; maintenance</li>
+        </ul>
+      </div>
+      <div class="cap-card">
+        <div class="cap-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="1.5"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+        </div>
+        <div class="cap-title">Procurement &amp; Vendor Coordination</div>
+        <ul class="cap-items">
+          <li>RFI / RFQ / RFP preparation</li>
+          <li>Vendor lifecycle management</li>
+          <li>DocuSign &amp; approval routing</li>
+          <li>Sourcing documentation &amp; compliance</li>
+          <li>Procurement tracking &amp; reporting</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="container">
+    <div class="reveal">
+      <p class="section-label">Career History</p>
+      <h2 class="section-h2">Professional Experience</h2>
+    </div>
+    <div class="tl-wrap">
+
+      <div class="tl-item reveal">
+        <div>
+          <p class="tl-date">Sep 2025 &ndash; Present</p>
+          <p class="tl-company">Outlier AI</p>
+          <p class="tl-loc">Remote</p>
+        </div>
+        <div>
+          <span class="tl-badge">Current Role</span>
+          <h3 class="tl-role">Compliance Generalist</h3>
+          <ul class="tl-bullets">
+            <li>Executed rigorous data validation across 2,000+ AI-generated outputs against Wealth Management compliance standards, maintaining 97% accuracy and reducing pipeline error rates by 25% through structured QA checklists.</li>
+            <li>Built and maintained full governance documentation infrastructure in SharePoint and MS Teams: version-controlled repositories, audit trail templates, and escalation workflows aligned to regulatory requirements.</li>
+            <li>Produced weekly performance reports and trend analyses for cross-functional teams of 8+ analysts, enabling data-driven process improvements across the review pipeline.</li>
+            <li>Standardized data review workflows and onboarding documentation, improving new team member ramp-up efficiency by 40%.</li>
+            <li>Coordinated action item tracking across multiple concurrent initiatives, reducing operational coordination tasks on senior stakeholders and ensuring consistent on-time delivery.</li>
+          </ul>
+          <div class="tl-kpis">
+            <div><div class="tl-kpi-num">0</div><div class="tl-kpi-label">Audit Findings</div></div>
+            <div><div class="tl-kpi-num">22%</div><div class="tl-kpi-label">Accuracy Improvement</div></div>
+            <div><div class="tl-kpi-num">25%</div><div class="tl-kpi-label">Error Rate Reduction</div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div>
+          <p class="tl-date">Jul 2021 &ndash; Sep 2023</p>
+          <p class="tl-company">Amazon Development Center</p>
+          <p class="tl-loc">Ontario, Canada</p>
+        </div>
+        <div>
+          <span class="tl-badge">Enterprise Operations</span>
+          <h3 class="tl-role">Senior Catalog Analyst II</h3>
+          <ul class="tl-bullets">
+            <li>Led a centralized data platform initiative, increasing processing efficiency by 40% across global catalog workflows and establishing a scalable operational governance framework for enterprise delivery.</li>
+            <li>Authored BRD and FRD documents through cross-functional workshops with QA, Legal, and Operations, achieving on-schedule delivery of all key project milestones.</li>
+            <li>Designed KPI dashboards in Excel with automated regression alerts and stakeholder notifications, reducing time-to-remediation and maintaining alignment with financial services control standards.</li>
+            <li>Raised SLA adherence to 98%+ and reduced processing errors by 20% through proactive issue tracking and hybrid Agile/Waterfall delivery methodology.</li>
+            <li>Managed procurement documentation via DocuSign; prepared RFI, RFQ, and RFP documents; tracked 40+ concurrent deliverables supporting 3 Project Managers simultaneously.</li>
+            <li>Executed third-party risk assessments, documented SOPs and process maps for audit readiness, and facilitated cross-functional peer reviews with QA, Legal, and Operations.</li>
+          </ul>
+          <div class="tl-kpis">
+            <div><div class="tl-kpi-num">40%</div><div class="tl-kpi-label">Processing Efficiency</div></div>
+            <div><div class="tl-kpi-num">98%+</div><div class="tl-kpi-label">SLA Adherence</div></div>
+            <div><div class="tl-kpi-num">20%</div><div class="tl-kpi-label">Error Reduction</div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div>
+          <p class="tl-date">Jun 2020 &ndash; Jul 2021</p>
+          <p class="tl-company">Amazon Development Center</p>
+          <p class="tl-loc">Ontario, Canada</p>
+        </div>
+        <div>
+          <span class="tl-badge">Product &amp; Process</span>
+          <h3 class="tl-role">Product Analyst I</h3>
+          <ul class="tl-bullets">
+            <li>Mapped multi-team process flows across a 60-person Asset Management support structure, identified bottlenecks, and redesigned workflows from 14 to 8 steps — achieving a 40% efficiency improvement.</li>
+            <li>Maintained project schedules, deliverables, risk logs, and status reports for multiple Project Managers using Agile and Scrum methodologies across concurrent initiatives.</li>
+            <li>Conducted user research and translated findings into user stories, acceptance criteria, and backlog items in Jira and Confluence, supporting feature prioritization aligned with business objectives.</li>
+            <li>Led change management activities, facilitated cross-functional peer reviews with QA and Legal, and maintained version-controlled documentation repositories for audit readiness.</li>
+            <li>Designed KPI dashboards in Excel and implemented A/B test frameworks, translating operational data into prioritized product recommendations for stakeholder review.</li>
+          </ul>
+          <div class="tl-kpis">
+            <div><div class="tl-kpi-num">40%</div><div class="tl-kpi-label">Workflow Efficiency Gain</div></div>
+            <div><div class="tl-kpi-num">14&#8594;8</div><div class="tl-kpi-label">Process Steps Reduced</div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div>
+          <p class="tl-date">Dec 2018 &ndash; Jun 2020</p>
+          <p class="tl-company">Amazon Development Center</p>
+          <p class="tl-loc">Ontario, Canada</p>
+        </div>
+        <div>
+          <span class="tl-badge">Risk &amp; Compliance</span>
+          <h3 class="tl-role">Transaction Risk Management Support</h3>
+          <ul class="tl-bullets">
+            <li>Reviewed high-volume fraud and risk cases, analyzing account activity, transaction patterns, and profile changes to identify suspicious behavior and operational risk indicators.</li>
+            <li>Documented case findings, financial impact, and loss exposure with 95%+ audit accuracy across four consecutive quarters, ensuring full compliance with internal governance and regulatory standards.</li>
+            <li>Designed streamlined investigation workflows that reduced escalations by 18% and improved operational discipline across compliance operations.</li>
+            <li>Validated transaction data using Excel and SQL, achieving 96%+ data quality consistency; trained junior staff on compliance documentation standards and reporting procedures.</li>
+            <li>Applied structured control measures aligned with Wealth Management internal governance and AML/KYC regulatory requirements.</li>
+          </ul>
+          <div class="tl-kpis">
+            <div><div class="tl-kpi-num">95%+</div><div class="tl-kpi-label">Audit Accuracy</div></div>
+            <div><div class="tl-kpi-num">18%</div><div class="tl-kpi-label">Escalation Reduction</div></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="container">
+    <div class="reveal">
+      <p class="section-label">Project Portfolio</p>
+      <h2 class="section-h2">Operational Impact &amp; Project Highlights</h2>
+    </div>
+    <div class="proj-grid reveal">
+      <div class="proj-card">
+        <div class="proj-num">01</div>
+        <p class="proj-tag">Data Platform &middot; Amazon &middot; 2021&ndash;2023</p>
+        <h3 class="proj-card-title">Enterprise Catalog Operations Optimization</h3>
+        <p class="proj-client">Amazon Development Center &mdash; Senior Catalog Analyst II</p>
+        <p class="proj-desc">Catalog operations relied on team-specific spreadsheets with no unified metrics or reporting standards. Led end-to-end initiative: stakeholder interviews across 8 departments, BRD and FRD authorship with QA/Legal/Operations, Excel dashboard architecture with automated regression alerts, and a standardized governance layer delivering a single source of truth for executive reporting.</p>
+        <div class="proj-metrics">
+          <div><div class="proj-metric-num">40%</div><div class="proj-metric-label">Efficiency Gain</div></div>
+          <div><div class="proj-metric-num">20%</div><div class="proj-metric-label">Error Reduction</div></div>
+          <div><div class="proj-metric-num">98%+</div><div class="proj-metric-label">SLA Adherence</div></div>
+        </div>
+      </div>
+      <div class="proj-card">
+        <div class="proj-num">02</div>
+        <p class="proj-tag">Process Redesign &middot; Amazon &middot; 2020&ndash;2021</p>
+        <h3 class="proj-card-title">Cross-Functional Workflow Transformation Initiative</h3>
+        <p class="proj-client">Amazon Development Center &mdash; Product Analyst I</p>
+        <p class="proj-desc">A 14-step approval workflow designed for 12 people was processing the volume of a 60-person organization with routine SLA misses. Led process mapping workshops across 6 sub-teams, performed root cause analysis on 3 months of issue logs, and redesigned the workflow to 8 steps with Jira automation rules and a Confluence operational runbook for cross-functional teams.</p>
+        <div class="proj-metrics">
+          <div><div class="proj-metric-num">40%</div><div class="proj-metric-label">Efficiency Gain</div></div>
+          <div><div class="proj-metric-num">18%</div><div class="proj-metric-label">Fewer Escalations</div></div>
+          <div><div class="proj-metric-num">14&#8594;8</div><div class="proj-metric-label">Steps Reduced</div></div>
+        </div>
+      </div>
+      <div class="proj-card">
+        <div class="proj-num">03</div>
+        <p class="proj-tag">Governance &middot; Outlier AI &middot; 2025</p>
+        <h3 class="proj-card-title">Compliance Governance &amp; Audit Readiness Program</h3>
+        <p class="proj-client">Outlier AI &mdash; Compliance Generalist</p>
+        <p class="proj-desc">Documentation dispersed across inboxes, local drives, and ad-hoc communication with a regulatory audit approaching. Audited four departments, designed a SharePoint taxonomy aligned to regulatory requirements, and built data validation protocols that flagged non-compliant entries upstream. Delivered full governance infrastructure under time pressure — zero audit findings across all regulatory reviews.</p>
+        <div class="proj-metrics">
+          <div><div class="proj-metric-num">0</div><div class="proj-metric-label">Audit Findings</div></div>
+          <div><div class="proj-metric-num">22%</div><div class="proj-metric-label">Accuracy Improvement</div></div>
+          <div><div class="proj-metric-num">25%</div><div class="proj-metric-label">Error Rate Reduction</div></div>
+        </div>
+      </div>
+      <div class="proj-card">
+        <div class="proj-num">04</div>
+        <p class="proj-tag">IT Project Management &middot; Conestoga &middot; 2024&ndash;2025</p>
+        <h3 class="proj-card-title">IT Project Lifecycle Management Capstone</h3>
+        <p class="proj-client">Conestoga College &mdash; Agile Capstone Project Lead &middot; GPA 3.6</p>
+        <p class="proj-desc">Led coordination across the full IT project lifecycle for a simulated Enterprise Data Management Platform. Delivered Project Charter, WBS, Scope Document, Risk and Financial Management Plans. Used Microsoft Project for schedule management and critical path analysis. Prepared RFI/RFQ/RFP documentation, managed risk and issue logs, and delivered weekly executive dashboards throughout the initiative using Waterfall and Hybrid delivery models.</p>
+        <div class="proj-metrics">
+          <div><div class="proj-metric-num">3.6</div><div class="proj-metric-label">GPA</div></div>
+          <div><div class="proj-metric-num">Full</div><div class="proj-metric-label">Lifecycle Delivered</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AWARDS -->
+<section id="awards">
+  <div class="container">
+    <div class="reveal">
+      <p class="section-label">Recognition</p>
+      <h2 class="section-h2">Awards &amp; Recognition</h2>
+    </div>
+    <div class="awards-grid reveal">
+      <div class="award-card">
+        <div class="award-year">2019</div>
+        <div class="award-name">Star Performer Award</div>
+        <p class="award-desc">Recognized for four consecutive quarters of outstanding performance in transaction risk management, maintaining 95%+ audit accuracy while identifying high-risk operational patterns before escalation threshold.</p>
+      </div>
+      <div class="award-card">
+        <div class="award-year">2019&ndash;2020</div>
+        <div class="award-name">Seller Delight Award</div>
+        <p class="award-desc">Awarded for driving high stakeholder satisfaction through redesigned investigation workflows that resolved complex, client-impacting operational issues with reduced escalation burden.</p>
+      </div>
+      <div class="award-card">
+        <div class="award-year">2021&ndash;2022</div>
+        <div class="award-name">Employee of the Month</div>
+        <p class="award-desc">Multiple peer and leadership recognitions for cross-functional collaboration between engineering and operations teams — facilitating communication that delivered critical project milestones on schedule.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <div class="container">
+    <div class="reveal">
+      <p class="section-label">Academic Background</p>
+      <h2 class="section-h2">Education &amp; Certifications</h2>
+    </div>
+    <div class="edu-grid reveal">
+      <div class="edu-card" style="border-color:rgba(37,99,235,.3)">
+        <p class="edu-period">May 2024 &ndash; Jul 2025</p>
+        <h3 class="edu-degree">Post-Graduate Certificate — IT Project Management</h3>
+        <p class="edu-school">Conestoga School of Applied Computer Science &amp; Information Technology, Waterloo</p>
+        <p class="edu-notes">GPA: 3.6 &middot; Agile Capstone Project Lead. Focus areas: IT project lifecycle management, Microsoft Project scheduling, critical path analysis, resource allocation, risk/issue management, procurement documentation (RFI/RFQ/RFP), Waterfall and Hybrid delivery methodologies.</p>
+      </div>
+      <div class="edu-card" style="border-color:rgba(37,99,235,.3)">
+        <p class="edu-period">Sep 2023 &ndash; Apr 2024</p>
+        <h3 class="edu-degree">Post-Graduate Certificate — Project Management</h3>
+        <p class="edu-school">Conestoga College School of Business, Waterloo</p>
+        <p class="edu-notes">Project Management fundamentals, stakeholder communication frameworks, governance and compliance controls, change management, and operational delivery coordination. Foundation year for IT Project Management specialization.</p>
+      </div>
+      <div class="edu-card">
+        <p class="edu-period">Jul 2015 &ndash; May 2018</p>
+        <h3 class="edu-degree">Bachelor of Business Administration — Finance &amp; Marketing</h3>
+        <p class="edu-school">PES University, Bengaluru</p>
+        <p class="edu-notes">Graduation Dean's List 2015&ndash;18 &middot; CNR Rao Merit Scholarship (all three years) &middot; Distinction in Optimal Portfolio Research &middot; NSE Nifty-50 Analysis research project.</p>
+      </div>
+      <div class="edu-card">
+        <p class="edu-period" style="color:#6b7280">Tools &amp; Technical Skills</p>
+        <h3 class="edu-degree" style="font-family:var(--sans);font-size:.85rem;font-weight:500;margin-bottom:1rem">Technical Proficiency</h3>
+        <div style="display:flex;flex-direction:column;gap:.55rem">
+          <div class="skill-row" style="flex-direction:column;gap:.3rem"><span class="skill-row-label">Project &amp; PM Tools</span><div class="skill-tags"><span class="skill-tag">Jira</span><span class="skill-tag">Confluence</span><span class="skill-tag">MS Project</span><span class="skill-tag">Asana</span><span class="skill-tag">ClickUp</span><span class="skill-tag">Clarity / CA PPM</span></div></div>
+          <div class="skill-row" style="flex-direction:column;gap:.3rem"><span class="skill-row-label">Data &amp; Analytics</span><div class="skill-tags"><span class="skill-tag">SQL</span><span class="skill-tag">Excel (Advanced)</span><span class="skill-tag">Power BI</span><span class="skill-tag">SAS</span><span class="skill-tag">KPI Dashboards</span></div></div>
+          <div class="skill-row" style="flex-direction:column;gap:.3rem"><span class="skill-row-label">Collaboration</span><div class="skill-tags"><span class="skill-tag">SharePoint</span><span class="skill-tag">MS Teams</span><span class="skill-tag">DocuSign</span><span class="skill-tag">Microsoft Copilot</span></div></div>
+          <div class="skill-row" style="flex-direction:column;gap:.3rem"><span class="skill-row-label">Methodologies</span><div class="skill-tags"><span class="skill-tag">Agile / Scrum</span><span class="skill-tag">Waterfall</span><span class="skill-tag">Hybrid Delivery</span><span class="skill-tag">AML / KYC</span></div></div>
+        </div>
+      </div>
+    </div>
+    <div class="cert-grid reveal">
+      <div class="cert-card">
+        <div class="cert-badge">GCP</div>
+        <div>
+          <div class="cert-name">Google Project Management Certificate</div>
+          <div class="cert-org">Google &mdash; In Progress</div>
+        </div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-badge">PMP</div>
+        <div>
+          <div class="cert-name">PMP Certification Preparation</div>
+          <div class="cert-org">Project Management Institute &mdash; Target 2026</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-wrap">
+      <div class="reveal">
+        <p class="section-label">Get in Touch</p>
+        <h2 class="contact-h2">Let's connect.</h2>
+        <p class="contact-desc">Open to Project Coordinator, PMO Analyst, IT Project Coordinator, Operations Analyst, Business Analyst, and Governance Analyst opportunities across the Greater Toronto Area and remote positions in Canada.</p>
+        <div class="contact-cta-btns">
+          <a href="mailto:Shashankvasanthakumar@gmail.com" class="btn-primary" style="justify-content:center">&#9993;&nbsp; Email Me Directly</a>
+          <a href="resume.pdf" download class="btn-primary" style="justify-content:center;background:#1d4ed8">&#8659;&nbsp; Download Resume</a>
+          <a href="https://linkedin.com/in/shashanksv24" target="_blank" class="btn-ghost" style="justify-content:center">&#128279;&nbsp; Connect on LinkedIn</a>
+        </div>
+        <div class="contact-info">
+          <div><p class="ci-label">Email</p><p class="ci-val"><a href="mailto:Shashankvasanthakumar@gmail.com">Shashankvasanthakumar@gmail.com</a></p></div>
+          <div><p class="ci-label">Phone</p><p class="ci-val"><a href="tel:+14378089346">(437) 808-9346</a></p></div>
+          <div><p class="ci-label">LinkedIn</p><p class="ci-val"><a href="https://linkedin.com/in/shashanksv24" target="_blank">linkedin.com/in/shashanksv24</a></p></div>
+          <div><p class="ci-label">Location</p><p class="ci-val">Greater Toronto Area, ON &mdash; Remote &amp; Hybrid welcome</p></div>
+        </div>
+      </div>
+      <div class="reveal reveal-d1" style="display:flex;flex-direction:column;gap:1.5rem">
+        <div class="contact-form-box">
+          <h3 class="cf-title">Send a Message</h3>
+          <div class="cf-form">
+            <div class="cf-field"><label>Name</label><input type="text" placeholder="Your name"/></div>
+            <div class="cf-field"><label>Email</label><input type="email" placeholder="your@email.com"/></div>
+            <div class="cf-field"><label>Message</label><textarea placeholder="Tell me about the opportunity or how I can help..."></textarea></div>
+            <button class="cf-submit" onclick="this.textContent='Sent \u2713';this.style.background='#166534'">Send &rarr;</button>
+          </div>
+        </div>
+        <div class="open-for">
+          <p class="of-title">Open to the Following Roles</p>
+          <div class="of-roles">
+            <div class="of-role strong">Project Coordinator</div>
+            <div class="of-role strong">PMO Analyst</div>
+            <div class="of-role strong">IT Project Coordinator</div>
+            <div class="of-role strong">Operations Analyst</div>
+            <div class="of-role strong">Governance Analyst</div>
+            <div class="of-role strong">Compliance Analyst</div>
+            <div class="of-role strong">Business Operations Analyst</div>
+            <div class="of-role">Product Analyst</div>
+            <div class="of-role">Junior Business Analyst</div>
+            <div class="of-role">Scrum / Delivery Coordinator</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-left">
+    <div class="footer-logo">SV<span>.</span></div>
+    <div class="footer-copy">&copy; 2026 Shashank Vasanthakumar &mdash; Greater Toronto Area, Ontario</div>
+  </div>
+  <ul class="footer-links">
+    <li><a href="mailto:Shashankvasanthakumar@gmail.com">Email</a></li>
+    <li><a href="https://linkedin.com/in/shashanksv24" target="_blank">LinkedIn</a></li>
+    <li><a href="tel:+14378089346">Phone</a></li>
+    <li><a href="resume.pdf" download>Resume</a></li>
+  </ul>
+</footer>
+
+<!-- STICKY FLOAT BUTTONS -->
+<div class="sticky-btns">
+  <a href="https://linkedin.com/in/shashanksv24" target="_blank" class="sticky-btn sticky-btn-li">&#128279; LinkedIn</a>
+  <a href="resume.pdf" download class="sticky-btn sticky-btn-dl">&#8659; Resume</a>
+</div>
+
+<script>
+// Scroll reveal
+const obs = new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{ if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target);} });
+},{threshold:0.07});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+
+// Nav active
+const secs = document.querySelectorAll('section[id]');
+const navAs = document.querySelectorAll('.nav-links a');
+window.addEventListener('scroll',()=>{
+  let cur='';
+  secs.forEach(s=>{if(window.scrollY>=s.offsetTop-140)cur=s.id;});
+  navAs.forEach(a=>{
+    const active = a.getAttribute('href')==='#'+cur;
+    a.classList.toggle('active',active);
+  });
+  // Fade sticky buttons
+  const sb = document.querySelector('.sticky-btns');
+  if(sb) sb.style.opacity = window.scrollY > 400 ? '1' : '0';
+});
+// Initial sticky hidden
+const sb = document.querySelector('.sticky-btns');
+if(sb){sb.style.opacity='0';sb.style.transition='opacity .3s';}
+</script>
+</body>
+</html>
